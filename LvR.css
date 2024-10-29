@@ -1,0 +1,149 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+     flex-direction: column;
+     box-sizing: border-box;
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     height: auto;
+     width: auto;
+     background: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
+  }
+
+  p strong{
+    color: white;
+    text-shadow: 2px 2px 4px gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.507);
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  h1 {
+      color: white;
+      text-shadow: 2px 2px 4px gold;
+      background: rgba(0, 0, 0, 0.568);
+      padding: 5px 10px;
+      width: 300px;
+      border-radius: 100%;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  h1 ion-icon{
+    color: rgba(255, 217, 0, 0.856);
+    background-image: url(lollipop_3GIF.gif);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.432);
+    border-radius: 50px;
+  }
+  h2{
+    color: darkgray;
+    text-shadow: 2px 2px 4px darkblue;
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 0px 10px;
+    border-radius: 100%;
+    font-size: 15px;
+  }
+  h2 ion-icon{
+    color: rgba(255, 217, 0, 0.856);
+  }
+  #controls {
+    display: flex;
+    margin-top: 2rem;
+    max-width: 28em;
+    background-color: transparent;
+  } 
+  
+  button {
+    font-weight: bold;
+    font-size: 1rem;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    border-radius: 20px;
+    background: darkblue;
+    box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#ffffff;
+    margin: 5px;  
+  }
+  #stopButton{
+    background: darkred;
+    box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  #stopButton:focus{
+    background-color: red;
+  }
+  #recordButton{
+    background-color: darkgreen;
+  }
+  #recordButton:focus{
+    background-color: rgb(13, 233, 13);
+  }
+  #pauseButton:active{
+    background-color: rgb(71, 71, 250);
+  }
+  
+  audio {
+    display: block;
+    width: 100%;
+    margin-top: 0.2rem;
+  }
+  
+  li {
+    list-style: none;
+    margin-bottom: 1rem;
+  }
+  
+  #formats {
+    margin-top: 0.5rem;
+    font-size: 80%;
+  }
+  
+  #recordingsList{
+      max-width: 28em;
+  }
+  @media screen{ 
+    body {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        width: 365px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+      margin-top: 20px;
+    }
+    
+    #controls {
+      margin-top: 1rem;
+    }
+    
+    button {
+      margin: 0 0.5rem;
+      margin-bottom: 20px;
+    }
+    
+    audio {
+      margin-top: 0;
+    }
+    
+    #recordingsList {
+      margin-top: 0;
+    }
+    
+}
