@@ -14,6 +14,17 @@ body {
      width: auto;
      background: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
   }
+  .container{
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 6px solid rgba(139, 0, 120, 0.623);
+    box-shadow: 0px 2px 20px lightsalmon;
+    background-color: rgba(0, 0, 139, 0.329);
+    padding: 20px;
+    width: 320px;
+    height: auto;
+    border-radius: 40px;
+  }
 
   p strong{
     color: white;
@@ -32,8 +43,8 @@ body {
       padding: 5px 10px;
       width: 300px;
       border-radius: 100%;
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin-top: 10px;
+      margin: 0 auto;
   }
   h1 ion-icon{
     color: rgba(255, 217, 0, 0.856);
@@ -44,12 +55,16 @@ body {
     border-radius: 50px;
   }
   h2{
+    margin: 0 auto;
+    margin-top: 10px;
     color: darkgray;
     text-shadow: 2px 2px 4px darkblue;
     background-color: rgba(0, 0, 0, 0.603);
     padding: 0px 10px;
     border-radius: 100%;
     font-size: 15px;
+    width: 150px;
+   
   }
   h2 ion-icon{
     color: rgba(255, 217, 0, 0.856);
@@ -60,35 +75,37 @@ body {
     max-width: 28em;
     background-color: transparent;
   } 
-  
-  button {
+  #recordButton,
+  #pauseButton,
+  #stopButton{
     font-weight: bold;
     font-size: 1rem;
     height: 3rem;
     width: 10rem;
-    border: none;
+    border: 2px solid rgba(255, 217, 0, 0.507);
     border-radius: 20px;
     background: darkblue;
-    box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 2px black;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     color:#ffffff;
+    margin: 0 auto;
     margin: 5px;  
-  }
+        }
   #stopButton{
     background: darkred;
     box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
     color: white;
   }
-  #stopButton:focus{
+  #stopButton:hover{
     background-color: red;
   }
   #recordButton{
     background-color: darkgreen;
   }
-  #recordButton:focus{
+  #recordButton:hover{
     background-color: rgb(13, 233, 13);
   }
   #pauseButton:active{
@@ -96,54 +113,56 @@ body {
   }
   
   audio {
+    margin-top: 20px;
     display: block;
     width: 100%;
     margin-top: 0.2rem;
+    color: white;
+    border: 4px solid rgba(179, 3, 185, 0.507);
+    box-shadow: 0px 2px 10px lightsalmon;
+    border-radius: 40px;
   }
-  
   li {
+    color: white;
+    text-shadow: 2px 2px 2px darkblue;
     list-style: none;
-    margin-bottom: 1rem;
+   
   }
   
   #formats {
-    margin-top: 0.5rem;
+    color: white;
+    text-shadow: 2px 2px 2px darkblue;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-size: 80%;
   }
   
   #recordingsList{
+      margin-top: 20px;
+      margin-bottom: 10px;
       max-width: 28em;
   }
-  @media screen{ 
-    body {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        width: 365px;
-        margin: 0 auto;
-    }
-    
-    h1 {
-      margin-top: 20px;
-    }
-    
-    #controls {
-      margin-top: 1rem;
-    }
-    
-    button {
-      margin: 0 0.5rem;
-      margin-bottom: 20px;
-    }
-    
-    audio {
-      margin-top: 0;
-    }
-    
-    #recordingsList {
-      margin-top: 0;
-    }
-    
-}
+    .homebtn{
+    padding: none;
+    background-image: url(MusicGig.gif);
+    background-position: center;
+    background-size: 70%;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px lightsalmon;
+    cursor: pointer;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(255, 217, 0, 0.795);
+  }
+  .homebtn:hover{
+    box-shadow: 0px 2px 20px gold;
+   }
+   .homebtn ion-icon{
+    color: rgba(255, 217, 0, 0.479);
+    font-size: 25px;
+   }
+   .homebtn ion-icon:hover{
+    color: gold;
+   }
+   
