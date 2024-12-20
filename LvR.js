@@ -165,3 +165,11 @@ function createDownloadLink(blob) {
 	//add the li element to the ol
 	recordingsList.appendChild(li);
 }
+
+
+////Light Section////
+
+function ToggleLight() {
+	const body = document.querySelector('body');
+	body.classList.toggle('light');
+}
