@@ -11,7 +11,7 @@
   <body>
     <div class="container">
     <h1 onclick="ToggleLight()">LOLLIP<ion-icon name="mic"></ion-icon>P</h1>
-    <h2>&copysr;JJPoweredIT<ion-icon name="bonfire"></ion-icon></h2>
+    <h2>&copy;JJPoweredIT<ion-icon name="bonfire"></ion-icon></h2>
     <div id="controls">
   	 <button id="recordButton">Record</button> 
   	 <button id="pauseButton" disabled>Pause</button>
@@ -20,13 +20,25 @@
 
     <div id="formats"></div>
    <details>
-    <summary>Recordings:</summary>
+    <summary><ion-icon name="folder-open-sharp"></ion-icon></summary>
   	<ol id="recordingsList"></ol>
   </details>
 
-
-    <button class="homebtn"><a href="https://jjservice.github.io/L2/1.html"><ion-icon name="arrow-back-sharp"></ion-icon></a></button>
     </div>
+
+    <footer>
+      <div class="homebtn"><a href="javascript:history.back()"><ion-icon name="arrow-back-sharp"></ion-icon></a></div>
+      <p>&copy;<span id="currentYear"></span>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
+    </footer>
+  
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+      
+      // Find the element with id "currentYear" and set its content to the current year
+      document.getElementById("currentYear").textContent = currentYear;
+    </script>
+
     <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
   	<script src="LvR.js"></script>
   	<script src="LvR2.js"></script>
